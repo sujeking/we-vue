@@ -119,6 +119,7 @@ export default {
 
   unbind (el) {
     if (el[CONTEXT] && el[CONTEXT].scrollEventTarget) {
+      console.log('haha')
       el[CONTEXT].scrollEventTarget.removeEventListener('scroll', el[CONTEXT].scrollEventListener)
     }
   }
